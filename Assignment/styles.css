@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+}
+  /*Navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+  }
+  
+  header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav {
+   
+    width: 100%;
+    height: 25px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .logo{
+    font-size: 34px;
+  }
+  #mygym{
+    font-size: 24px;
+    font-style: oblique;
+    margin: 0;
+    padding: 0;
+  }
+  .toggle-button{
+    position: absolute;
+    margin-top: 18px;
+    top: .75 rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    margin-right: 25px;
+  }
+ 
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  #mygym:hover{
+    color: rgb(3, 243, 148);
+  }
+
+  /*Homepage*/
+.container{
+    display:flex;
+    justify-content: space-evenly;
+}
+.container2{
+    background-image: url("https://img.freepik.com/premium-photo/3d-rendering-black-dumbbells-floor-dark-concept-fitness-room-with-training-equipments-back_67155-14961.jpg?w=1380");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+}
+.button{
+    height: 50px;
+    width: 180px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(131, 129, 129);
+    font-weight: bold;
+    font-size: large;
+    transition: background-color 0.5s, color 0.5s;
+}
+.button:hover{
+    background-color: rgb(3, 243, 148);
+    cursor: pointer;
+    color:white;
+}
+.button:active{
+    opacity: 0.6;
+}
+  .divMain{
+    background-color: rgb(64, 64, 71);
+    color: white;
+    border-color: black;
+    border-radius: 20px;
+    width: 40%;
+    margin: 40px;
+    padding: 40px;
+}
+h3{
+    font-size: 30px;
+    margin: 0;
+}
+p{
+    font-size: 18px;
+}
+.divImage{
+    background-color: rgb(64, 64, 71);
+    border-radius: 20px;
+    margin: 40px;
+    width: 40%;
+}
+  
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: #333;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.footerDiv{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.följOssDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mediaAnchor:hover{
+  opacity: .3;
+  border-bottom: 0;
+}
+.mediaLinks{
+  
+  width: 40px;
+  height: 40px;
+}
+
+/* Join Page */
+
+.joinBody{
+  background-color: rgb(64, 64, 71);
+  display: flex;
+  justify-content: center;
+}
+.joinDiv{
+  padding: 60px;
+  border-radius: 8px;
+  margin-top: 60px;
+  height: 600px;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  h1{
+    text-align: center;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: rgb(3, 243, 148);
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(6, 107, 67);
+}
+
+/* Exercise Page */
+
+.workoutDiv{
+  background-color: #555;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  height:auto;
+  margin-bottom: 20px;
+}
+.box-1{
+  background-color: dodgerblue;
+  width: 30% auto;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  p{
+    color: rgb(0, 0, 0);
+    margin: 0;
+    text-align: center;
+    margin: 10px 10px;
+  }
+}
+.inputExercise{
+  width: 50%;
+}
+.buttonExercise{
+  width: 150px;
+  height: 50px;
+  background-color: rgb(3, 243, 148);
+    cursor: pointer;
+    border-radius: 20px;
+    border-style: none;
+    font-size: large;
+    transition: .2s;
+}
+.buttonExercise:hover{
+  color: white;
+}
+
+@media screen and (max-width:800px) {
+    
+  .toggle-button{
+    display: flex;
+  }
+
+  .toggle-button:hover{
+    border-bottom: 0;
+  }
+  nav ul{
+    display: none; 
+    flex-direction: column;
+    
+  }
+  
+  nav{
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  nav li{
+    padding: 5px;
+    text-align: center;
+  }
+  .navUL.active{
+    display: flex;
+  }
+  .container{
+        flex-direction: column;
+    }
+    .divMain, .divImage{
+        width: 90%;
+    }
+    
+}
